@@ -1,0 +1,15 @@
+{
+	"name": "2011 Christmas Card",
+	
+	"error_exemptips": "127.0.0.1",
+	"error_timeout": 300,
+	"error_email": "error@localhost",
+	
+	"live_domain": "http://2011ccard.awayken.cloudbees.net",
+	"live_dsn": "",
+	"live_library": "_library",
+	
+	"local_domain": "http://localhost",
+	"local_dsn": "",
+	"local_library": "_library"
+}

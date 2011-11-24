@@ -1,0 +1,18 @@
+{
+	"template":"sample",
+	"name":"",
+	"title":"",
+	"description":"",
+	"keywords":"",
+	"visible":true,
+	"headers":{
+		"styles":"",
+		"html":"",
+		"scripts":""
+	},
+	"footers":{
+		"styles":"",
+		"html":"",
+		"scripts":""
+	}
+}
