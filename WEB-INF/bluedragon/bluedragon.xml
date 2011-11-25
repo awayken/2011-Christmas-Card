@@ -67,7 +67,7 @@
     <password>admin</password>
     <buffersize>0</buffersize>
     <defaultcharset>utf-8</defaultcharset>
-    <lastupdated>24/Nov/2011 10:02.33</lastupdated>
+    <lastupdated>24/Nov/2011 20:58.48</lastupdated>
   </system>
   <fonts>
     <dirs>/usr/X11R6/lib/X11/fonts/ttf,/usr/X11R6/lib/X11/fonts/TTF</dirs>
