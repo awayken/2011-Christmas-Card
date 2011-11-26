@@ -1,4 +1,5 @@
-/bluedragon/
-/manual/
-/WEB-INF/bluedragon/bluedragon.xml.bak*
-
+.DS_Store
+/webapp/bluedragon/
+/webapp/manual/
+/webapp/WEB-INF/bluedragon/bluedragon.xml.bak*
+/webapp/WEB-INF/bluedragon/work/
