@@ -3,3 +3,4 @@
 /webapp/manual/
 /webapp/WEB-INF/bluedragon/bluedragon.xml.bak*
 /webapp/WEB-INF/bluedragon/work/
+/build/webapp*
