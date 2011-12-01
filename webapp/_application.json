@@ -9,7 +9,7 @@
 	"live_dsn": "",
 	"live_library": "_library",
 	
-	"local_domain": "http://localhost",
+	"local_domain": "http://localhost:8080",
 	"local_dsn": "",
 	"local_library": "_library"
 }
