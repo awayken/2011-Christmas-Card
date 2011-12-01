@@ -1,18 +1,7 @@
 {
-	"template":"sample",
-	"name":"",
-	"title":"",
-	"description":"",
-	"keywords":"",
-	"visible":true,
-	"headers":{
-		"styles":"",
-		"html":"",
-		"scripts":""
-	},
-	"footers":{
-		"styles":"",
-		"html":"",
-		"scripts":""
-	}
+	"template":"homepage",
+	"name":"Homepage",
+	"title":"Welcome!",
+	"description":"Welcome to the homepage for the 2011 Miles Rausch Family Christmas Card!",
+	"visible":true
 }

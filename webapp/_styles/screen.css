@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+	{ margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+a:focus { outline: 1px dotted #cfc; }
+ins { text-decoration: none; background-color: #cfc; }
+del { text-decoration: line-through; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+
+
+
+/** Setup & Helpers **/
+.alignleft { float: left; }
+.alignright { float: right; }
+.aligncenter { margin: 0 auto; }
+img.alignleft { margin-right: 8px; margin-bottom: 8px; }
+img.alignright { margin-left: 8px; margin-bottom: 8px; }
+
+.clearleft { clear: left; }
+.clearright { clear: right; }
+.clearcenter { clear: both; }
+
+.message { width: 80%; padding: 8px; margin: 8px auto; border: 2px solid; color: #000; }
+.message.failure { border-color: #c00; background-color: #fcc; }
+.message.warning { border-color: gold; background-color: #ff9; }
+.message.success { border-color: #060; background-color: #cfc; }
+.message.new { border-color: #009; background-color: #e1e3fd; }
+.message.note { border-color: #ccc; background-color: #eee; }
+
+
+
+
+/** Layout **/
+/** position, top, left, right, bottom, z-index, float, display, width, height, padding, margin, border, outline, list-style (type, position, image), overflow, vertical-align **/
+a img { border: none; }
+abbr { cursor: pointer; }
+sup { position: relative; top: -0.5em; }
+sub { position: relative; top: 0.5em; }
+
+#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 { padding-bottom: 0.8em; }
+
+#main table td { vertical-align: top; }
+#main table th { vertical-align: middle; }
+
+#main ol { padding: 0 0 1.0em 20px; list-style-type: decimal; }
+#main ol ol, #main ol ul { padding-bottom: 0; }
+#main ul { padding: 0 0 1.0em 20px; list-style-type: disc; }
+#main ul ol, #main ul ul { padding-bottom: 0; }
+#main ul>li>ul { list-style-type: circle; }
+#main ul>li>ul ul { list-style-type: square; }
+
+#main p { padding-bottom: 1.0em; }
+#main blockquote { width: 70%; padding-bottom: 1.0em; margin: 0 auto; }
+
+
+
+
+/** Colors & Typography **/
+/** color, background (color, image, repeat, attachment, position), font (style, variant, weight, size, family), line-height, text (indent, align, decoration, transform), letter-spacing, word-spacing, white-space, cursor **/
+sup { font-size: 0.8em; }
+sub { font-size: 0.8em; }
+
+#main h1, #main h2, #main h3 { font-size: 1.76em; }
+#main h4 { font-size: 1.5em; }
+#main h5 { font-size: 1.3em; }
+#main h6 { font-size: 1.1em; }
+
+
+
+
+/** @media **/
+
+/** Print Styles
+@media print { }
+ **/
+ 
