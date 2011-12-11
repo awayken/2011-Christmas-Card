@@ -1,14 +1,14 @@
 
 <cfinclude template="shared/header.cfm">
 
-<cfif !isDefined('url.close')>
+<cfif !isDefined('url.nopopup')>
 <div id="popup">
 	@(popup)
 </div>
 </cfif>
 		
 <div id="memories">
-	@(pan)
+	<div id="pan">@(pan)</div>
 	@(memories)
 </div>
 	

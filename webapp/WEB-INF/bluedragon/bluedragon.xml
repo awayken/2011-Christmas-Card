@@ -23,7 +23,7 @@
     <errorhandler></errorhandler>
     <functionscopedvariables>false</functionscopedvariables>
     <lastupdated>10/Dec/2011 21:59.07</lastupdated>
-    <whitespacecomp>false</whitespacecomp>
+    <whitespacecomp>true</whitespacecomp>
     <allowedips></allowedips>
   </system>
   <file>

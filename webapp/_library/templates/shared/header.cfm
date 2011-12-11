@@ -1,10 +1,9 @@
-
-<cfset local.title = request.page.getTitle()>
-<cfset local.desc = request.page.getDescription()>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 	<cfoutput>
+		<cfset local.title = request.page.getTitle()>
+		<cfset local.desc = request.page.getDescription()>
 		<meta charset="utf-8">
 		<title><cfif Len(local.title)>#local.title# &mdash; </cfif>2011 Miles Rausch Family Christmas Card</title>
 	<cfif Len(local.desc)>

@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Baumans|Ribeye+Marrow);
 
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
@@ -50,36 +51,65 @@ img.alignright { margin-left: 8px; margin-bottom: 8px; }
 /** position, top, left, right, bottom, z-index, float, display, width, height, padding, margin, border, outline, list-style (type, position, image), overflow, vertical-align **/
 a img { border: none; }
 abbr { cursor: pointer; }
+
 sup { position: relative; top: -0.5em; }
 sub { position: relative; top: 0.5em; }
 
-#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 { padding-bottom: 0.8em; }
+h1, h2, h3, h4, h5, h6 { padding-bottom: 0.5em; }
 
-#main table td { vertical-align: top; }
-#main table th { vertical-align: middle; }
+.button { margin-top: 1em; }
+.button a { display: inline-block; height: 2em; padding: 0 0.4em; border: 1px solid #00cc00; border-radius: 0.25em; }
 
-#main ol { padding: 0 0 1.0em 20px; list-style-type: decimal; }
-#main ol ol, #main ol ul { padding-bottom: 0; }
-#main ul { padding: 0 0 1.0em 20px; list-style-type: disc; }
-#main ul ol, #main ul ul { padding-bottom: 0; }
-#main ul>li>ul { list-style-type: circle; }
-#main ul>li>ul ul { list-style-type: square; }
+#popup { position: absolute; top: 1em; right: 15%; bottom: 2em; left: 15%; z-index: 10; padding: 1em; border: 1px solid silver; overflow: auto; }
 
-#main p { padding-bottom: 1.0em; }
-#main blockquote { width: 70%; padding-bottom: 1.0em; margin: 0 auto; }
+#memories { position: relative; width: 960px; margin: 0.5em auto; }
+#memories > ul > li { position: absolute; z-index: 10; width: 32px; height: 32px; border: 1px solid silver; overflow: hidden; }
+#memories > ul > li:hover { z-index: 50; width: 480px; height: 300px; padding: 1em; overflow: auto; }
+
+#homepage1 { top: 20px; left: 20px; }
+
+#pan { min-height: 450px; }
+#pan img { display: block; }
+
+#popup ol { padding: 0 0 1.0em 20px; list-style-type: decimal; }
+#popup ol ol, #popup ol ul { padding-bottom: 0; }
+#popup ul { padding: 0 0 1.0em 20px; list-style-type: disc; }
+#popup ul ol, #popup ul ul { padding-bottom: 0; }
+#popup ul>li>ul { list-style-type: circle; }
+#popup ul>li>ul ul { list-style-type: square; }
+
+#popup p, #memories p { padding-bottom: 1.0em; }
+#popup blockquote, #memories blockquote { width: 70%; padding-bottom: 1.0em; margin: 0 auto; }
 
 
 
 
 /** Colors & Typography **/
 /** color, background (color, image, repeat, attachment, position), font (style, variant, weight, size, family), line-height, text (indent, align, decoration, transform), letter-spacing, word-spacing, white-space, cursor **/
+body { color: #3a3a3a; background: #e6e6e6; line-height: 1.5; font-family: Georgia, "Times New Roman", serif; }
+
+a:link, a:visited { color: #000099; text-decoration: underline; }
+a:hover, a:active { text-decoration: none; }
+
 sup { font-size: 0.8em; }
 sub { font-size: 0.8em; }
 
-#main h1, #main h2, #main h3 { font-size: 1.76em; }
-#main h4 { font-size: 1.5em; }
-#main h5 { font-size: 1.3em; }
-#main h6 { font-size: 1.1em; }
+h1, h2, h3, h4, h5, h6 { color: #bb2d2f; font-family: 'Ribeye Marrow'; }
+h1 { font-size: 1.76em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+.button { font-family: 'Baumans', sans-serif; text-align: center; }
+.button a { color: #fff; background: #30d32b; text-decoration: none; line-height: 2; -moz-box-shadow: 0 0 0.5em #ccc; -webkit-box-shadow: 0 0 0.5em #ccc; box-shadow: 0 0 0.5em #ccc; }
+
+#popup { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
+
+#memories > ul > li { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; cursor: pointer; }
+
+#openbddebug { background: #fff; }
 
 
 
