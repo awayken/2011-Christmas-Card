@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 { padding-bottom: 0.5em; }
 .button { margin-top: 1em; }
 .button a { display: inline-block; height: 2em; padding: 0 0.4em; border: 1px solid #00cc00; border-radius: 0.25em; }
 
-#popup { position: absolute; top: 1em; right: 15%; bottom: 2em; left: 15%; z-index: 10; padding: 1em; border: 1px solid silver; overflow: auto; }
+#popup { position: absolute; top: 1em; right: 15%; bottom: 2em; left: 15%; z-index: 9999; padding: 1em; border: 1px solid silver; overflow: auto; }
 
 #memories { position: relative; width: 960px; margin: 0.5em auto; }
 #memories > ul > li { position: absolute; z-index: 10; width: 32px; height: 32px; border: 1px solid silver; overflow: hidden; }
