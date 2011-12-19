@@ -7,7 +7,7 @@
 </div>
 </cfif>
 		
-<div id="memories">
+<div id="content" class="memories">
 	<div id="pan">@(pan)</div>
 	@(memories)
 </div>

@@ -18,7 +18,7 @@ ol, ul { list-style: none; }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 :focus { outline: 0; }
-a:focus { outline: 1px dotted #cfc; }
+a:focus { outline: 1px dotted gray; }
 ins { text-decoration: none; background-color: #cfc; }
 del { text-decoration: line-through; }
 table { border-collapse: collapse; border-spacing: 0; }
@@ -60,16 +60,20 @@ h1, h2, h3, h4, h5, h6 { padding-bottom: 0.5em; }
 .button { margin-top: 1em; }
 .button a { display: inline-block; height: 2em; padding: 0 0.4em; border: 1px solid #00cc00; border-radius: 0.25em; }
 
-#popup { position: absolute; top: 1em; right: 15%; bottom: 2em; left: 15%; z-index: 9999; padding: 1em; border: 1px solid silver; overflow: auto; }
+#popup { position: absolute; top: 2em; right: 15%; bottom: 2em; left: 15%; z-index: 9999; padding: 1em; border: 1px solid silver; overflow: auto; }
+#popup p > img { vertical-align: middle; }
 
-#memories { position: relative; width: 960px; margin: 0.5em auto; }
-#memories > ul > li { position: absolute; z-index: 10; width: 32px; height: 32px; border: 1px solid silver; overflow: hidden; }
-#memories > ul > li:hover { z-index: 50; width: 480px; height: 300px; padding: 1em; overflow: auto; }
+#content { position: relative; width: 960px; margin: 0.5em auto; }
+#content a.ornament { display: block; width: 32px; height: 32px; }
 
-#homepage1 { top: 20px; left: 20px; }
+.memories > ul > li { position: absolute; z-index: 10; width: 32px; height: 32px; overflow: hidden; }
+.memories > ul > li:hover { z-index: 50; width: 480px; height: 300px; padding: 1em; border: 1px solid silver; overflow: auto; }
+.memories > ul > li:hover a.ornament { display: none; }
+
+#homepage1 { position: absolute; top: 240px; left: 450px; z-index: 10; width: 32px; height: 32px; overflow: hidden; }
 
 #pan { min-height: 450px; }
-#pan img { display: block; }
+#pan img { display: block; margin: 0 auto; }
 
 #popup ol { padding: 0 0 1.0em 20px; list-style-type: decimal; }
 #popup ol ol, #popup ol ul { padding-bottom: 0; }
@@ -107,7 +111,12 @@ h6 { font-size: 1.1em; }
 
 #popup { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
 
-#memories > ul > li { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; cursor: pointer; }
+#content a.ornament { background: transparent url('images/ornament.png') no-repeat scroll 0 0; }
+
+.memories > ul > li { cursor: pointer; }
+.memories > ul > li:hover { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
+
+#homepage1 { text-indent: -9999em; }
 
 #openbddebug { background: #fff; }
 

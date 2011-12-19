@@ -7,9 +7,9 @@
 	
 	"live_domain": "http://2011ccard.awayken.cloudbees.net",
 	"live_dsn": "",
-	"live_library": "_library",
+	"live_library": "/_library",
 	
 	"local_domain": "http://localhost:8080",
 	"local_dsn": "",
-	"local_library": "_library"
+	"local_library": "/_library"
 }
