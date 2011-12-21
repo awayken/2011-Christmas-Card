@@ -1,0 +1,7 @@
+{
+	"template":"rooms",
+	"name":"Rooms",
+	"title":"Choose a room",
+	"description":"Pick a room, any room.",
+	"visible":true
+}

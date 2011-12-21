@@ -22,7 +22,8 @@
     <nativelibdir>/WEB-INF/bin</nativelibdir>
     <errorhandler></errorhandler>
     <functionscopedvariables>false</functionscopedvariables>
-    <lastupdated>21/Dec/2011 03:58.22</lastupdated>
+    <lastupdated>20/Dec/2011 03:30.11</lastupdated>
+    <whitespacecomp>true</whitespacecomp>
     <allowedips></allowedips>
     <whitespacecomp>true</whitespacecomp>
   </system>

@@ -6,6 +6,10 @@
 	@(popup)
 </div>
 </cfif>
+
+<div id="toolbar">
+	<a href="/rooms/">Back to rooms</a>
+</div>
 		
 <div id="content" class="memories">
 	<div id="pan">@(pan)</div>
