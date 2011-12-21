@@ -2,18 +2,18 @@
 <cfinclude template="shared/header.cfm">
 
 <cfif !isDefined('url.nopopup')>
-<div id="popup">
+<section id="popup">
 	@(popup)
-</div>
+</section>
 </cfif>
 
-<div id="toolbar">
+<section id="toolbar">
 	<a href="/rooms/">Back to rooms</a>
-</div>
+</section>
 		
-<div id="content" class="memories">
+<section id="content" class="memories">
 	<div id="pan">@(pan)</div>
 	@(memories)
-</div>
+</section>
 	
 <cfinclude template="shared/footer.cfm">

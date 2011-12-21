@@ -13,3 +13,6 @@
 	</cfoutput>
 	</head>
 	<body>
+		<header>
+			<h1><a href="http://milesrauschfamily.com">MilesRauschFamily.com</a></h1>
+		</header>

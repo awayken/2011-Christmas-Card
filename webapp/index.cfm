@@ -12,7 +12,7 @@
 @(/popup)
 
 @(pan)
-	<img src="house.jpg" alt="Our new home!" width="720" height="540">
+	<img src="house.jpg" alt="Our new home!">
 @(/pan)
 
 @(memories)

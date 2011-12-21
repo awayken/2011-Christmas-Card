@@ -4,17 +4,17 @@
 (function () {
 	"use strict";
 	
-	window.NAME = {
+	window.CCARD2011 = {
 		init: function () {
 			this.method();
 		},
 		
 		method: function () {
-	
+			console.log('CCARD2011');
 		}
 	};
 	
 	$(document).ready(function () {
-		window.NAME.init();
+		window.CCARD2011.init();
 	});
 }());
