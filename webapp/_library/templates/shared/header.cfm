@@ -1,3 +1,6 @@
+<cfif application.status EQ "live">
+	<cfsetting showDebugOutput="no" />
+</cfif>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
