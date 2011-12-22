@@ -1,5 +1,5 @@
 @(pan)
-	<img src="house.jpg" alt="Our new home (faded)!" width="720" height="540">
+	<img src="house.jpg" alt="Our new home (faded)!">
 @(/pan)
 
 @(rooms)
