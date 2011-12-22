@@ -40,7 +40,7 @@
 		
 		<cfloop array="#local.pluginvalues#" index="local.i">
 			<cfset local.key = ListFirst(local.i, "=") />
-			<cfset local.value = Mid(ListLast(local.i, "="), 2, Len(ListLast(local.i, "=")) - 2) />
+			<cfset local.value = Mid(ListRest(local.i, "="), 2, Len(ListRest(local.i, "=")) - 2) />
 			<cfset local.status = StructInsert(local.pluginarguments, local.key, local.value, true) />
 		</cfloop>
 		
