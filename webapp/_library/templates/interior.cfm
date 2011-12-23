@@ -7,9 +7,12 @@
 </section>
 </cfif>
 
-<section id="toolbar">
-	<a href="/rooms/">Back to rooms</a>
-</section>
+<nav>
+	<a href="/kitchen">Kitchen</a>
+	<a href="/livingroom">Living Room</a>
+	<a href="/familyroom">Family Room</a>
+	<a href="/ians">Ian's Room</a>
+</nav>
 		
 <section id="content" class="memories">
 	<div id="pan">@(pan)</div>

@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Baumans|Ribeye+Marrow);
+@import url(http://fonts.googleapis.com/css?family=Duru+Sans);
 
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
@@ -79,11 +80,16 @@ h1, h2, h3, h4, h5, h6 { padding-bottom: 0.5em; }
 header { width: 960px; height: 70px; margin: 0 auto; }
 header h1 { padding: 0; }
 
-footer { position: relative; z-index: 10; width: 960px; height: 60px; margin: -60px auto 0 auto; }
+nav { width: 956px; height: 30px; margin: 0 auto; border: 2px solid #cdccd3; border-top: none; border-bottom: none; }
+nav a { display: inline-block; margin: 0 1em; }
 
-#toolbar { width: 900px; height: 30px; margin: 0 auto; padding: 0 30px; border-radius: 1em; }
+footer { width: 960px; height: 60px; margin: 0 auto; border-top: 2px solid #cdccd3; }
+footer > div { width: 150px; }
+footer span { display: block; line-height: 2; }
+footer .youtube { display: inline-block; width: 30px; height: 30px; margin-right: 1em; }
+footer .flickr { display: inline-block; width: 30px; height: 30px; }
 
-#content { position: relative; z-index: 1; width: 960px; margin: 0 auto; padding: 30px 0 80px 0; }
+#content { position: relative; z-index: 1; width: 960px; margin: 0 auto; padding: 30px 0; }
 #content a.ornament { display: block; width: 32px; height: 32px; }
 #content a.ornament:focus { outline: 2px dotted #438a22; }
 
@@ -104,7 +110,10 @@ footer { position: relative; z-index: 10; width: 960px; height: 60px; margin: -6
 #pan { min-height: 450px; padding: 1em 0; }
 #pan img { display: block; margin: 0 auto; border: 3px solid #fff; }
 
+/** Homepage **/
 #homepage1 { position: absolute; top: 300px; left: 450px; z-index: 10; width: 32px; height: 32px; overflow: hidden; }
+
+/** Kitchen **/
 #kitchen1 { top: 210px; left: 220px; }
 #kitchen1:hover { top: 100px; }
 #kitchen2 { top: 340px; left: 810px; }
@@ -122,20 +131,38 @@ footer { position: relative; z-index: 10; width: 960px; height: 60px; margin: -6
 #kitchen8 { top: 450px; left: 360px; }
 #kitchen8:hover { top: 200px; }
 
+/** Living Room **/
+#living1 { top: 460px; left: 680px; }
+#living1:hover { top: 230px; left: 450px; }
+#living2 { top: 370px; left: 340px; }
+#living2:hover { top: 200px; }
+#living3 { top: 440px; left: 50px; }
+#living3:hover { top: 230px; }
+#living4 { top: 450px; left: 510px; }
+#living4:hover { top: 270px; }
+#living5 { top: 410px; left: 580px; }
+#living5:hover { top: 170px; left: 470px; }
+#living6 { top: 410px; left: 220px; }
+#living6:hover { top: 200px; }
+#living7 { top: 390px; left: 490px; }
+#living7:hover { top: 210px; }
+#living8 { top: 460px; left: 140px; }
+#living8:hover { top: 200px; }
+
 
 
 
 /** Colors & Typography **/
 /** color, background (color, image, repeat, attachment, position), font (style, variant, weight, size, family), line-height, text (indent, align, decoration, transform), letter-spacing, word-spacing, white-space, cursor **/
-body { color: #3a3a3a; background: #d9f1ff; line-height: 1.5; font-family: Georgia, "Times New Roman", serif; }
+body { color: #3a3a3a; background: #c6b1a1; line-height: 1.5; font-family: Georgia, "Times New Roman", serif; }
 
-a:link, a:visited { color: #000099; text-decoration: underline; }
+a:link, a:visited { color: #cdccd3; text-decoration: underline; }
 a:hover, a:active { text-decoration: none; }
 
 sup { font-size: 0.8em; }
 sub { font-size: 0.8em; }
 
-h1, h2, h3, h4, h5, h6 { color: #bb2d2f; font-family: 'Ribeye Marrow'; }
+h1, h2, h3, h4, h5, h6 { color: #790000; font-family: 'Ribeye Marrow'; }
 h1 { font-size: 1.6em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.4em; }
@@ -148,16 +175,22 @@ h6 { font-size: 1.1em; }
 
 #popup { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
 
-header { line-height: 70px; text-align: center; }
-header h1 { font-size: 3em; font-variant: small-caps; letter-spacing: 10px; }
+header { background: transparent url('images/header.jpg') no-repeat scroll center bottom; line-height: 70px; text-align: center; }
+header h1 { font-family: 'Duru Sans'; font-size: 3em; font-weight: 100; text-transform: uppercase; }
+header h1 a:link, header h1 a:visited
+	{ color: #790000; }
+header h1 em { font-style: normal; font-weight: 900; }
 
-footer { background: transparent url('images/footer.png') no-repeat scroll center 0; }
+nav { background: #6c676b; line-height: 28px; text-align: center; }
+nav a { color: #fff; }
+nav a:focus { outline: 2px dotted #fff; }
 
-#toolbar { background: #000; line-height: 28px; }
-#toolbar a { color: #fff; }
-#toolbar a:focus { outline: 2px dotted #fff; }
+footer { color: #fff; background: #6c676b; font-family: Arial, sans-serif; font-size: 0.76em; }
+footer > div { text-align: center; }
+footer .youtube { background: transparent url('images/youtube.jpg') no-repeat scroll 0 0; text-indent: -9999em; }
+footer .flickr { background: transparent url('images/flickr.jpg') no-repeat scroll 0 0; text-indent: -9999em; }
 
-#content { background: transparent url('images/content.png') repeat scroll 0 0; }
+#content { background: transparent url('images/ugly-sweater-pattern.png') repeat-y scroll center 0; }
 
 #content a.ornament { background: transparent url('images/ornament.png') no-repeat scroll 0 0; text-indent: -9999em; }
 
@@ -166,10 +199,10 @@ footer { background: transparent url('images/footer.png') no-repeat scroll cente
 .memories > ul > li:hover { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
 
 .rooms > ul { text-align: center; }
-.rooms > ul a { color: #fff; background: #433a35; background: rgba(67, 58, 53, 0.75); text-decoration: none; }
-.rooms > ul a:hover { background: rgba(67, 58, 53, 0.9); }
+.rooms > ul a { color: #fff; background: #6c676b; background: rgba(108, 103, 107, 0.75); text-decoration: none; }
+.rooms > ul a:hover { background: rgba(108, 103, 107, 0.9); }
 .rooms > ul a:focus, .rooms > ul a:active
-	{ background: #433a35; }
+	{ background: #6c676b; }
 	
 #pan img { -moz-box-shadow: 0 0 1em #000; -webkit-box-shadow: 0 0 1em #000; box-shadow: 0 0 1em #000; }
 

@@ -17,5 +17,5 @@
 	</head>
 	<body>
 		<header>
-			<h1><a href="http://milesrauschfamily.com">MilesRauschFamily.com</a></h1>
+			<h1><a href="<cfoutput>#application.config.domain#</cfoutput>">Miles<em>Rausch</em>Family<em>.com</em></a></h1>
 		</header>
