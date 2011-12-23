@@ -12,9 +12,37 @@
 
 @(memories)
 <ul>
-	<li id="kitchen1">
-		<a href="#kitchen1" class="ornament">Memory one</a>
-		<h2>Memory One</h2>
+	<li id="living1">
+		<a href="#living1" class="ornament"></a>
+		@[oembed service="flickr" url="http://www.flickr.com/photos/holli_joi/6244810179/"]
+	</li>
+	<li id="living2">
+		<a href="#living2" class="ornament"></a>
+		@[oembed service="flickr" url="http://www.flickr.com/photos/awayken/6244984734/"]
+	</li>
+	<li id="living3">
+		<a href="#living3" class="ornament"></a>
+		@[oembed service="flickr" url="http://www.flickr.com/photos/awayken/5801801656/"]
+	</li>
+	<li id="living4">
+		<a href="#living4" class="ornament"></a>
+		@[oembed service="flickr" url="http://www.flickr.com/photos/holli_joi/6193858896/"]
+	</li>
+	<li id="living5">
+		<a href="#living5" class="ornament"></a>
+		@[oembed service="youtube" url="http://www.youtube.com/watch?v=WjQ3neaw7Fo"]
+	</li>
+	<li id="living6">
+		<a href="#living6" class="ornament"></a>
+		@[oembed service="youtube" url="http://www.youtube.com/watch?v=PuMxqNqBeyY"]
+	</li>
+	<li id="living7">
+		<a href="#living7" class="ornament"></a>
+		@[oembed service="youtube" url="http://www.youtube.com/watch?v=p7vOl_axYas"]
+	</li>
+	<li id="living8">
+		<a href="#living8" class="ornament"></a>
+		@[oembed service="youtube" url="http://www.youtube.com/watch?v=_JmHUE1WkNs"]
 	</li>
 </ul>
 @(/memories)
