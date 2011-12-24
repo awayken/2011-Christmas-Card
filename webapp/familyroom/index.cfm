@@ -5,7 +5,7 @@
 	
 	<p>Holli and Miles do their best to keep up with their favorite shows through Hulu and Netflix, but now Ian has his own to add to the mix, <span class="title">Yo Gabba Gabba!</span>. For some reason, this show holds a supernatural hold over Ian, which you'll see here. The family room still houses the best toys: the iMac, the PlayStation 3, and, of course, the light-up tool bench.</p>
 	
-	<div class="button"><a href="?nopopup">Explore</a></div>
+	<div class="button"><a href="?nopopup">Explore the Family Room</a></div>
 @(/popup)
 
 @(pan)

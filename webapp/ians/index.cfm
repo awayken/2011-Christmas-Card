@@ -5,7 +5,7 @@
 	
 	<p>Ian's night time routine is pretty extensive. Sometimes it starts with a bath, but then it continues with lotions, pajamas (see above), books, snacks, medicines, and bedding rituals. Bed time has been a trial since Ian's earliest days, so his bedroom remains one of the more bittersweet rooms in the house. Thankfully, it's more sweet than bitter, as the videos and images will attest to.</p>
 	
-	<div class="button"><a href="?nopopup">Explore</a></div>
+	<div class="button"><a href="?nopopup">Explore Ian's Room</a></div>
 @(/popup)
 
 @(pan)

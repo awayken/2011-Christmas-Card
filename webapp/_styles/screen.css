@@ -1,6 +1,5 @@
 @charset "utf-8";
-@import url(http://fonts.googleapis.com/css?family=Baumans|Ribeye+Marrow);
-@import url(http://fonts.googleapis.com/css?family=Duru+Sans);
+/*@import url('http://fonts.googleapis.com/css?family=Cabin+Condensed:400,700');*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ */
 /* v1.0 | 20080212 */
@@ -107,6 +106,8 @@ footer .flickr { display: inline-block; width: 30px; height: 30px; }
 .rooms > ul a { display: block; width: 100%; height: 100%; padding: 1em 0; border-radius: 0.5em; }
 .rooms > ul a:focus { outline: 2px dotted #433a35; }
 
+.fourohfour div { min-height: 200px; margin: 0 10%; padding: 1em; }
+
 #pan { min-height: 450px; padding: 1em 0; }
 #pan img { display: block; margin: 0 auto; border: 3px solid #fff; }
 
@@ -178,7 +179,7 @@ footer .flickr { display: inline-block; width: 30px; height: 30px; }
 #ian4:hover { top: 200px; left: 460px; }
 #ian5 { top: 260px; left: 400px; }
 #ian5:hover { top: 170px; }
-#ian6 { top: 130px; left: 610px; }
+#ian6 { top: 80px; left: 520px; }
 
 
 
@@ -193,7 +194,7 @@ a:hover, a:active { text-decoration: none; }
 sup { font-size: 0.8em; }
 sub { font-size: 0.8em; }
 
-h1, h2, h3, h4, h5, h6 { color: #790000; font-family: 'Ribeye Marrow', Georgia, "Times New Roman", serif; }
+h1, h2, h3, h4, h5, h6 { color: #790000; font-family: 'Cabin Condensed', Arial, sans-serif; }
 h1 { font-size: 1.6em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.4em; }
@@ -201,7 +202,7 @@ h4 { font-size: 1.3em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1.1em; }
 
-.button { font-family: 'Baumans', sans-serif; text-align: center; }
+.button { font-family: 'Cabin Condensed', Arial, sans-serif; text-align: center; }
 .button a { color: #fff; background: #438a22; text-decoration: none; line-height: 2; -moz-box-shadow: 0 0 0.5em #ccc; -webkit-box-shadow: 0 0 0.5em #ccc; box-shadow: 0 0 0.5em #ccc; }
 
 .title { font-style: italic; }
@@ -209,16 +210,16 @@ h6 { font-size: 1.1em; }
 #popup { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
 
 header { background: transparent url('images/header.jpg') no-repeat scroll center bottom; line-height: 70px; text-align: center; }
-header h1 { font-family: 'Duru Sans', Arial, sans-serif; font-size: 3em; font-weight: 100; text-transform: uppercase; }
+header h1 { font-size: 3em; font-weight: 100; text-transform: uppercase; }
 header h1 a:link, header h1 a:visited
 	{ color: #790000; }
-header h1 em { font-style: normal; font-weight: 900; }
+header h1 em { font-style: normal; font-weight: 700; }
 
 nav { background: #6c676b; line-height: 28px; text-align: center; }
 nav a { color: #fff; }
 nav a:focus { outline: 2px dotted #fff; }
 
-footer { color: #fff; background: #6c676b; font-family: Arial, sans-serif; font-size: 0.76em; }
+footer { color: #fff; background: #6c676b; font-family: 'Cabin Condensed', Arial, sans-serif; font-size: 0.76em; }
 footer > div { text-align: center; }
 footer .youtube { background: transparent url('images/youtube.jpg') no-repeat scroll 0 0; text-indent: -9999em; }
 footer .flickr { background: transparent url('images/flickr.jpg') no-repeat scroll 0 0; text-indent: -9999em; }
@@ -236,6 +237,8 @@ footer .flickr { background: transparent url('images/flickr.jpg') no-repeat scro
 .rooms > ul a:hover { background: rgba(108, 103, 107, 0.9); }
 .rooms > ul a:focus, .rooms > ul a:active
 	{ background: #6c676b; }
+	
+.fourohfour div { background: #fff; background: rgba(255, 255, 255, 0.9); }
 	
 #pan img { -moz-box-shadow: 0 0 1em #000; -webkit-box-shadow: 0 0 1em #000; box-shadow: 0 0 1em #000; }
 

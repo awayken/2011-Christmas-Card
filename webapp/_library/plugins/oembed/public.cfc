@@ -7,11 +7,14 @@ Author URI: http://www.awayken.com
 Additional information: http://oembed.com/
 --->
 <cfcomponent output="no">
+	<cfset this.path = application.homepath & "/_library/plugins/oembed" />
+	
 	<cffunction name="init" output="no" access="public" returntype="string">
 		<cfargument name="service" type="string" required="yes" />
 		<cfargument name="url" type="string" required="yes" />
 		
 		<cfset var local = {} />
+		
 		<cfset local.oembedurl = "" />
 		<cfset local.html = "" />
 		

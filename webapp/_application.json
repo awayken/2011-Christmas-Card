@@ -3,9 +3,9 @@
 	
 	"error_exemptips": "127.0.0.1",
 	"error_timeout": 300,
-	"error_email": "error@localhost",
+	"error_email": "ccard@milesrauschfamily.com",
 	
-	"live_domain": "http://2011ccard.awayken.cloudbees.net",
+	"live_domain": "http://2011ccard.milesrauschfamily.com",
 	"live_dsn": "",
 	"live_library": "/_library",
 	

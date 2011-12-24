@@ -23,12 +23,11 @@
 	Application methods.
 --->
 	<cffunction name="onApplicationStart" access="public" output="yes" returnType="boolean">
-				
+		<!--- Decent way to get the "home" path for this application --->
+		<cfset application.homepath = getDirectoryFromPath(getMetaData(this).path) />
+		
 		<!--- Parse application config file --->
 		<cfset application.config = getApplicationConfig() />
-		
-		<!--- Really really really convoluted way to get the "home" path for this application --->
-		<cfset application.homepath = Replace(GetDirectoryFromPath(ExpandPath("./Application.cfc")), "\", "/", "all") />
 		
 		<cftry>
 			<!--- Application helpers --->
@@ -120,6 +119,10 @@
 		
 		<cfset var local = {} />
 		<cfset var errordate = { Date=DateFormat(Now(), "short"), Time=TimeFormat(Now(), "medium") } />
+		
+		<cfparam name="application.config.error_exemptips" default="127.0.0.1" />
+		<cfparam name="application.config.error_timeout" default="300" />
+		<cfparam name="application.config.error_email" default="error@localhost" />
 		
 		<cfset local.exemptIPs = application.config.error_exemptips />
 		<cfset local.timeout = application.config.error_timeout />
@@ -228,9 +231,9 @@
 		</cfif>
 		
 		<!--- Can we find an application config --->
-		<cfif FileExists(ExpandPath("_application.json"))>
+		<cfif FileExists(application.homepath & "/_application.json")>
 			<!--- Read in application config, parse, and copy into a config object --->
-			<cffile action="read" file="#ExpandPath("_application.json")#" variable="meta" />
+			<cffile action="read" file="#application.homepath#/_application.json" variable="meta" />
 			<cfset status = StructAppend(config, DeserializeJSON(meta)) />
 			
 			<cfif isDefined("config.local_domain") AND lCase(config.local_domain) EQ domain>
@@ -259,7 +262,7 @@
 		<!--- If not, let's try to figure it out --->
 		<cfelse>
 			<!--- Is there a _library folder --->
-			<cfif DirectoryExists(ExpandPath("_library"))>
+			<cfif DirectoryExists(application.homepath & "/_library")>
 				<!--- Let's make up some bare minimum values --->
 				<cfset config.name = CreateUUID()>
 				<cfset config.domain = domain />

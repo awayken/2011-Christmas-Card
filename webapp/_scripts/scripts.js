@@ -19,7 +19,9 @@
 			$('a[href="?nopopup"]')
 				.click(function (e) {
 					e.preventDefault();
-					pop.remove();
+					pop.fadeOut("fast", function () {
+						pop.remove();
+					});
 					location.hash = 'nopopup';
 				});
 		}

@@ -7,7 +7,7 @@
 	
 	<p>After cooking and eating, the next most interesting areas of the kitchen are the trash and recycling bins. Imagine our surprise when we realized that Ian can understand the sentence, "Ian, can you throw this away?" It's been a slow road, but he's gradually learning that you only put items into the trash; you do not take them out. Anything goes with recycling, however, and paper towel tubes and milk jugs make regular toys for our toddler.</p>
 	
-	<div class="button"><a href="?nopopup">Explore</a></div>
+	<div class="button"><a href="?nopopup">Explore the Kitchen</a></div>
 @(/popup)
 
 @(pan)
