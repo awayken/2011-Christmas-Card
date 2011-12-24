@@ -34,20 +34,25 @@ Additional information: http://oembed.com/
 				
 				<cfswitch expression="#arguments.service#">
 					<cfcase value="flickr">
-						<cfif Len(local.oembed.oembed.title.XmlText)>
+						<cfif StructKeyExists(local.oembed.oembed, "title") AND Len(local.oembed.oembed.title.XmlText)>
 							<cfset local.imagetitle = HtmlEditFormat(local.oembed.oembed.title.XmlText) />
 						<cfelse>
 							<cfset local.imagetitle = "This image" />
 						</cfif>
-						<cfset local.imagetitle = local.imagetitle & " by " & HtmlEditFormat(local.oembed.oembed.author_name.XmlText) />
 						
-						<cfsavecontent variable="local.html"><cfoutput>
-							<a href="#arguments.url#" target="_blank"><img src="#local.oembed.oembed.url.XmlText#" alt="#local.imagetitle#" title="#local.imagetitle#" class="oembed_flickr"></a>
-						</cfoutput></cfsavecontent>
+						<cfif StructKeyExists(local.oembed.oembed, "author_name")>
+							<cfset local.imagetitle = local.imagetitle & " by " & HtmlEditFormat(local.oembed.oembed.author_name.XmlText) />
+						</cfif>
+						
+						<cfif StructKeyExists(local.oembed.oembed, "url")>
+							<cfset local.html = '<a href="#arguments.url#" target="_blank"><img src="#local.oembed.oembed.url.XmlText#" alt="#local.imagetitle#" title="#local.imagetitle#" class="oembed_flickr"></a>' />
+						</cfif>
 					</cfcase>
 					
 					<cfcase value="youtube">
-						<cfset local.html = local.oembed.oembed.html.XmlText />
+						<cfif StructKeyExists(local.oembed.oembed, "html")>
+							<cfset local.html = local.oembed.oembed.html.XmlText />
+						</cfif>
 					</cfcase>
 					
 				</cfswitch>
