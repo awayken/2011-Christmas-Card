@@ -1,7 +1,7 @@
 @(popup)
 	<h1>The Living Room</h1>
 	
-	<p>The living room has been perfect for just that. Countless hours have been spent picking books, reading books, throwing books, and making up new dialogue and plots for books. Ian has developed a real passion for being read to, and his library is starting to match Miles's in terms of size and variety. There are the classics, like <span class="title">Goodnight Moon</span>, but also edgy new works, like <span class="title">Brown Bear, Brown Bear, What Do You See?</span>.</p>
+	<p>The living room has been perfect for just that. Countless hours have been spent picking books, reading books, throwing books, and making up new dialogue and plots for books. Ian has developed a real passion for being read to, and his library is starting to match Miles's in terms of size and variety. There are the classics, like <span class="title">Goodnight Moon</span>, but also edgy new works, like <span class="title">Where's Dave?</span>.</p>
 	
 	<p>It's not all academics in the living room. Races are run, regularly, complementing the frequent juggling competitions, bowling pin toppling expositions, and human obstacle courses. Cars continue to be a fascination and favorite of Ian's. His garage (located below the television set) showcases vehicles large and small, manual and automatic. Unfortunately, his enjoyment at revving cars is quickly paling in light of his enjoyment at throwing them.</p>
 	
