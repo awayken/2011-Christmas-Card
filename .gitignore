@@ -4,3 +4,4 @@
 /webapp/WEB-INF/bluedragon/bluedragon.xml.bak*
 /webapp/WEB-INF/bluedragon/work/
 /build/webapp*
+/webapp/_library/plugins/oembed/_files/
