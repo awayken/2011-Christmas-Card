@@ -6,11 +6,22 @@
 	
 	window.CCARD2011 = {
 		init: function () {
-			this.method();
+			this.hidePopup();
 		},
 		
-		method: function () {
-			console.log('CCARD2011');
+		hidePopup: function () {
+			var pop = $('#popup');
+			
+			if (location.hash === '#nopopup') {
+				pop.remove();
+			}
+		
+			$('a[href="?nopopup"]')
+				.click(function (e) {
+					e.preventDefault();
+					pop.remove();
+					location.hash = 'nopopup';
+				});
 		}
 	};
 	

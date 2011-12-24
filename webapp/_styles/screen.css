@@ -149,6 +149,37 @@ footer .flickr { display: inline-block; width: 30px; height: 30px; }
 #living8 { top: 460px; left: 140px; }
 #living8:hover { top: 200px; }
 
+/** Family Room **/
+#family1 { top: 460px; left: 390px; }
+#family1:hover { top: 280px; }
+#family2 { top: 360px; left: 550px; }
+#family2:hover { top: 180px; }
+#family3 { top: 440px; left: 50px; }
+#family3:hover { top: 260px; }
+#family4 { top: 450px; left: 510px; }
+#family4:hover { top: 270px; }
+#family5 { top: 370px; left: 450px; }
+#family5:hover { top: 120px; }
+#family6 { top: 460px; left: 220px; }
+#family6:hover { top: 200px; }
+#family7 { top: 460px; left: 280px; }
+#family7:hover { top: 200px; }
+#family8 { top: 410px; left: 680px; }
+#family8:hover { top: 150px; left: 230px; }
+
+/** Ian's Room **/
+#ian1 { top: 460px; left: 680px; }
+#ian1:hover { top: 220px; left: 450px; }
+#ian2 { top: 460px; left: 580px; }
+#ian2:hover { top: 220px; }
+#ian3 { top: 350px; left: 150px; }
+#ian3:hover { top: 230px; }
+#ian4 { top: 450px; left: 900px; }
+#ian4:hover { top: 200px; left: 460px; }
+#ian5 { top: 260px; left: 400px; }
+#ian5:hover { top: 170px; }
+#ian6 { top: 130px; left: 610px; }
+
 
 
 
@@ -173,7 +204,7 @@ h6 { font-size: 1.1em; }
 .button { font-family: 'Baumans', sans-serif; text-align: center; }
 .button a { color: #fff; background: #438a22; text-decoration: none; line-height: 2; -moz-box-shadow: 0 0 0.5em #ccc; -webkit-box-shadow: 0 0 0.5em #ccc; box-shadow: 0 0 0.5em #ccc; }
 
-.book { text-decoration: underline; }
+.title { font-style: italic; }
 
 #popup { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
 
