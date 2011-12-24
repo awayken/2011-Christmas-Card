@@ -9,9 +9,11 @@ Additional information: http://oembed.com/
 <cfcomponent output="no">
 	<cfset this.path = application.homepath & "/_library/plugins/oembed" />
 	
-	<cffunction name="init" output="no" access="public" returntype="string">
+	<cffunction name="init" output="yes" access="public" returntype="string">
 		<cfargument name="service" type="string" required="yes" />
 		<cfargument name="url" type="string" required="yes" />
+		<cfargument name="maxwidth" type="numeric" required="no" default="450" />
+		<cfargument name="maxheight" type="numeric" required="no" default="450" />
 		
 		<cfset var local = {} />
 		
@@ -20,16 +22,23 @@ Additional information: http://oembed.com/
 		
 		<cfswitch expression="#arguments.service#">
 			<cfcase value="flickr">
-				<cfset local.oembedurl = "http://www.flickr.com/services/oembed/?maxheight=450&maxwidth=450&url=" & UrlEncodedFormat(arguments.url) />
+				<cfset local.oembedurl = "http://www.flickr.com/services/oembed/?url=" & UrlEncodedFormat(arguments.url) />
 			</cfcase>
 			
 			<cfcase value="youtube">
-				<cfset local.oembedurl = "http://www.youtube.com/oembed?maxheight=450&maxwidth=450&url=" & UrlEncodedFormat(arguments.url) />
+				<cfset local.oembedurl = "http://www.youtube.com/oembed?url=" & UrlEncodedFormat(arguments.url) />
 			</cfcase>
 			
 		</cfswitch>
 		
 		<cfif Len(local.oembedurl)>
+			<cfif Val(arguments.maxwidth)>
+				<cfset local.oembedurl = local.oembedurl & "&maxwidth=" & Val(arguments.maxwidth) />
+			</cfif>
+			<cfif Val(arguments.maxheight)>
+				<cfset local.oembedurl = local.oembedurl & "&maxheight=" & Val(arguments.maxheight) />
+			</cfif>
+		
 			<cfhttp method="get" url="#local.oembedurl#&format=xml"></cfhttp>
 			
 			<cfif cfhttp.StatusCode EQ "200 OK">
@@ -48,13 +57,13 @@ Additional information: http://oembed.com/
 						</cfif>
 						
 						<cfif StructKeyExists(local.oembed.oembed, "url")>
-							<cfset local.html = '<a href="#arguments.url#" target="_blank"><img src="#local.oembed.oembed.url.XmlText#" alt="#local.imagetitle#" title="#local.imagetitle#" class="oembed_flickr"></a>' />
+							<cfset local.html = '<div class="oembed_flickr"><a href="#arguments.url#" target="_blank"><img src="#local.oembed.oembed.url.XmlText#" alt="#local.imagetitle#" title="#local.imagetitle#" class="oembed_flickr"></a></div>' />
 						</cfif>
 					</cfcase>
 					
 					<cfcase value="youtube">
 						<cfif StructKeyExists(local.oembed.oembed, "html")>
-							<cfset local.html = local.oembed.oembed.html.XmlText />
+							<cfset local.html = '<div class="oembed_youtube">' & local.oembed.oembed.html.XmlText & '</div>' />
 						</cfif>
 					</cfcase>
 					

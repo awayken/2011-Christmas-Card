@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 { padding-bottom: 0.5em; }
 
 #popup { position: absolute; top: 2em; right: 15%; bottom: 2em; left: 15%; z-index: 9999; padding: 1em; border: 1px solid silver; overflow: auto; }
 #popup p > img { vertical-align: middle; }
+#popup .oembed_flickr { float: left; margin: 0 0.5em 0.5em 0; }
 
 #popup ol { padding: 0 0 1.0em 20px; list-style-type: decimal; }
 #popup ol ol, #popup ol ul { padding-bottom: 0; }
