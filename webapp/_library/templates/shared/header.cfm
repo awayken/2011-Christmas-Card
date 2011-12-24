@@ -12,6 +12,7 @@
 	<cfif Len(local.desc)>
 		<meta name="description" content="#local.desc#">
 	</cfif>
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
 		<link rel="stylesheet" href="#application.config.domain#/_styles/screen.css">
 	</cfoutput>
 	</head>
