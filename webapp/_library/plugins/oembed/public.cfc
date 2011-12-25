@@ -42,7 +42,7 @@ Additional information: http://oembed.com/
 			<cfinvoke component="#application.config.library#.filecache" method="cacheFile" returnvariable="local.filecache">
 				<cfinvokeargument name="remoteurl" value="#local.oembedurl#&format=xml" />
 				<cfinvokeargument name="filepath" value="#this.path#/_files/#hash(local.oembedurl, "md5")#.xml" />
-				<cfinvokeargument name="cachetime" value="10" />
+				<cfinvokeargument name="cachetime" value="60" />
 				<cfinvokeargument name="forcenewcache" value="#IsDefined('url.reset')#" />
 			</cfinvoke>
 			
