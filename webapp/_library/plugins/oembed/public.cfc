@@ -39,6 +39,10 @@ Additional information: http://oembed.com/
 				<cfset local.oembedurl = local.oembedurl & "&maxheight=" & Val(arguments.maxheight) />
 			</cfif>
 			
+			<cfif Not DirectoryExists(this.path & "/_files")>
+				<cfdirectory action="create" directory="#this.path#/_files" />
+			</cfif>
+			
 			<cfinvoke component="#application.config.library#.filecache" method="cacheFile" returnvariable="local.filecache">
 				<cfinvokeargument name="remoteurl" value="#local.oembedurl#&format=xml" />
 				<cfinvokeargument name="filepath" value="#this.path#/_files/#hash(local.oembedurl, "md5")#.xml" />

@@ -94,13 +94,13 @@ footer .flickr { display: inline-block; width: 30px; height: 30px; }
 #content a.ornament:focus { outline: 2px dotted #438a22; }
 
 .memories > ul > li { position: absolute; top: 0; left: 0; z-index: 10; width: 32px; height: 32px; overflow: hidden; }
-.memories > ul > li > div { visibility: hidden; }
-.memories > ul > li img { display: block; }
-.memories > ul > li:hover { z-index: 100; width: auto; height: auto; padding: 1em; border: 1px solid silver; }
-.memories > ul > li:hover > div { visibility: visible; }
+.memories > ul > li img, .memories > ul > li iframe
+	{ display: block; }
+.memories > ul > li:hover, .memories > ul > li.hover
+	{ z-index: 100; width: auto; height: auto; padding: 1em; border: 1px solid silver; }
 
-#content.memories > ul > li a.ornament { visibility: visible; }
-#content.memories > ul > li:hover a.ornament { display: none; }
+#content.memories > ul > li:hover a.ornament, #content.memories > ul > li.hover a.ornament
+	{ display: none; }
 
 .rooms > ul { position: absolute; top: 0; left: 50%; z-index: 10; width: 726px; margin: 172px 0 0 -363px; }
 .rooms > ul li { display: inline-block; width: 45%; margin: 0 0.25em 142px 0.25em; }
