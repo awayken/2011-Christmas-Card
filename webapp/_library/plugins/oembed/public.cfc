@@ -71,7 +71,7 @@ Additional information: http://oembed.com/
 				
 				<cfcase value="youtube">
 					<cfif StructKeyExists(local.oembed.oembed, "html")>
-						<cfset local.html = '<div class="oembed_youtube">' & local.oembed.oembed.html.XmlText & '</div>' />
+						<cfset local.html = '<div class="oembed_youtube">' & Replace(local.oembed.oembed.html.XmlText, "&", "&amp;", "all") & '</div>' />
 					</cfif>
 				</cfcase>
 				
