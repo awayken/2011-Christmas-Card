@@ -96,11 +96,9 @@ footer .flickr { display: inline-block; width: 30px; height: 30px; }
 .memories > ul > li { position: absolute; top: 0; left: 0; z-index: 10; width: 32px; height: 32px; overflow: hidden; }
 .memories > ul > li img, .memories > ul > li iframe
 	{ display: block; }
-.memories > ul > li:hover, .memories > ul > li.hover
-	{ z-index: 100; width: auto; height: auto; padding: 1em; border: 1px solid silver; }
+.memories > ul > li.hover { z-index: 100; width: auto; height: auto; padding: 1em; border: 1px solid silver; }
 
-#content.memories > ul > li:hover a.ornament, #content.memories > ul > li.hover a.ornament
-	{ display: none; }
+#content.memories > ul > li.hover a.ornament { display: none; }
 
 .rooms > ul { position: absolute; top: 0; left: 50%; z-index: 10; width: 726px; margin: 172px 0 0 -363px; }
 .rooms > ul li { display: inline-block; width: 45%; margin: 0 0.25em 142px 0.25em; }
@@ -117,69 +115,69 @@ footer .flickr { display: inline-block; width: 30px; height: 30px; }
 
 /** Kitchen **/
 #kitchen1 { top: 210px; left: 220px; }
-#kitchen1:hover { top: 100px; }
+#kitchen1.hover { top: 100px; }
 #kitchen2 { top: 340px; left: 810px; }
-#kitchen2:hover { top: 220px; left: 580px; }
+#kitchen2.hover { top: 220px; left: 580px; }
 #kitchen3 { top: 440px; left: 850px; }
-#kitchen3:hover { top: 310px; left: 620px; }
+#kitchen3.hover { top: 310px; left: 620px; }
 #kitchen4 { top: 450px; left: 40px; }
-#kitchen4:hover { top: 280px; }
+#kitchen4.hover { top: 280px; }
 #kitchen5 { top: 440px; left: 220px; }
-#kitchen5:hover { top: 280px; }
+#kitchen5.hover { top: 280px; }
 #kitchen6 { top: 420px; left: 140px; }
-#kitchen6:hover { top: 200px; }
+#kitchen6.hover { top: 200px; }
 #kitchen7 { top: 410px; left: 900px; }
-#kitchen7:hover { top: 180px; left: 450px; }
+#kitchen7.hover { top: 180px; left: 450px; }
 #kitchen8 { top: 450px; left: 360px; }
-#kitchen8:hover { top: 200px; }
+#kitchen8.hover { top: 200px; }
 
 /** Living Room **/
 #living1 { top: 460px; left: 680px; }
-#living1:hover { top: 230px; left: 450px; }
+#living1.hover { top: 230px; left: 450px; }
 #living2 { top: 370px; left: 340px; }
-#living2:hover { top: 200px; }
+#living2.hover { top: 200px; }
 #living3 { top: 440px; left: 50px; }
-#living3:hover { top: 230px; }
+#living3.hover { top: 230px; }
 #living4 { top: 450px; left: 510px; }
-#living4:hover { top: 270px; }
+#living4.hover { top: 270px; }
 #living5 { top: 410px; left: 580px; }
-#living5:hover { top: 170px; left: 470px; }
+#living5.hover { top: 170px; left: 470px; }
 #living6 { top: 410px; left: 220px; }
-#living6:hover { top: 200px; }
+#living6.hover { top: 200px; }
 #living7 { top: 390px; left: 490px; }
-#living7:hover { top: 210px; }
+#living7.hover { top: 210px; }
 #living8 { top: 460px; left: 140px; }
-#living8:hover { top: 200px; }
+#living8.hover { top: 200px; }
 
 /** Family Room **/
 #family1 { top: 460px; left: 390px; }
-#family1:hover { top: 280px; }
+#family1.hover { top: 280px; }
 #family2 { top: 360px; left: 550px; }
-#family2:hover { top: 180px; }
+#family2.hover { top: 180px; }
 #family3 { top: 440px; left: 50px; }
-#family3:hover { top: 260px; }
+#family3.hover { top: 260px; }
 #family4 { top: 450px; left: 510px; }
-#family4:hover { top: 270px; }
+#family4.hover { top: 270px; }
 #family5 { top: 370px; left: 450px; }
-#family5:hover { top: 120px; }
+#family5.hover { top: 120px; }
 #family6 { top: 460px; left: 220px; }
-#family6:hover { top: 200px; }
+#family6.hover { top: 200px; }
 #family7 { top: 460px; left: 280px; }
-#family7:hover { top: 200px; }
+#family7.hover { top: 200px; }
 #family8 { top: 410px; left: 680px; }
-#family8:hover { top: 150px; left: 230px; }
+#family8.hover { top: 150px; left: 230px; }
 
 /** Ian's Room **/
 #ian1 { top: 460px; left: 680px; }
-#ian1:hover { top: 220px; left: 450px; }
+#ian1.hover { top: 220px; left: 450px; }
 #ian2 { top: 460px; left: 580px; }
-#ian2:hover { top: 220px; }
+#ian2.hover { top: 220px; }
 #ian3 { top: 350px; left: 150px; }
-#ian3:hover { top: 230px; }
+#ian3.hover { top: 230px; }
 #ian4 { top: 450px; left: 900px; }
-#ian4:hover { top: 200px; left: 460px; }
+#ian4.hover { top: 200px; left: 460px; }
 #ian5 { top: 260px; left: 400px; }
-#ian5:hover { top: 170px; }
+#ian5.hover { top: 170px; }
 #ian6 { top: 80px; left: 520px; }
 
 
@@ -231,7 +229,7 @@ footer .flickr { background: transparent url('images/flickr.jpg') no-repeat scro
 
 .memories > ul { font-size: 0.8em; }
 .memories > ul > li { cursor: pointer; }
-.memories > ul > li:hover { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
+.memories > ul > li.hover { background: white; -moz-box-shadow: 0 0 1em #888; -webkit-box-shadow: 0 0 1em #888; box-shadow: 0 0 1em #888; }
 
 .rooms > ul { text-align: center; }
 .rooms > ul a { color: #fff; background: #6c676b; background: rgba(108, 103, 107, 0.75); text-decoration: none; }

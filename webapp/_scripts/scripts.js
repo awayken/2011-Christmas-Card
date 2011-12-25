@@ -7,6 +7,7 @@
 	window.CCARD2011 = {
 		init: function () {
 			this.hidePopup();
+			this.handleMemories();
 		},
 		
 		hidePopup: function () {
@@ -24,6 +25,33 @@
 					});
 					location.hash = 'nopopup';
 				});
+		},
+		
+		memoryTimer: 0,
+		handleMemories: function () {
+			var that = this, memories = $('.memories > ul > li');
+			console.log('handle');
+			if (memories.length) {
+			console.log('memories length');
+				memories
+					.hover(function () {
+						$(this).addClass('hover');
+					},
+					function () {
+						that.hideMemory($(this));
+					});
+			}
+		},
+		hideMemory: function (memory) {
+			var that = this;
+			
+			this.memoryTimer = setTimeout(function () {
+				memory.fadeOut('fast', function () {
+					memory.removeClass('hover');
+					memory.show();
+				});
+				
+			}, 1000);
 		}
 	};
 	
