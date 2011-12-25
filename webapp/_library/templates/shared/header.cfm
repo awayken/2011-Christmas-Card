@@ -12,9 +12,11 @@
 	<cfif Len(local.desc)>
 		<meta name="description" content="#local.desc#">
 	</cfif>
-		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1">
 		<link rel="stylesheet" href="#application.config.domain#/_styles/screen.css">
 	</cfoutput>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 	<cfif application.status EQ "live">
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
